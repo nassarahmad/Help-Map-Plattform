@@ -1,6 +1,7 @@
-import express from "express";
-import cors from "cors";
-import dotenv from "dotenv";
+
+const express = require("express");
+const cors = require("cors");
+const dotenv = require("dotenv");
 
 dotenv.config();
 
@@ -10,6 +11,6 @@ app.use(express.json());
 
 app.use("/requests", requestRoutes);
 
-app.listen(3000, () => {
-  console.log("Server running on port 3000");
+app.listen(5000, () => {
+  console.log("Server running on port 5000");
 });
